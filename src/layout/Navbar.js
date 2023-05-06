@@ -29,9 +29,7 @@ export default function Navbar() {
           />
         </div>
         <div className="container-fluid">
-          <Link className="navbar-brand text-dark" to="/">
-            Fury Hive Gym Co.
-          </Link>
+          <a className="navbar-brand text-dark">Fury Hive Gym Co.</a>
           <a className="navbar-brand text-dark">Gym Members : {memberCount}</a>
         </div>
       </nav>

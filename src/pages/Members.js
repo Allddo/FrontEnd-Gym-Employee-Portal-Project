@@ -68,6 +68,9 @@ export default function Home() {
             ))}
           </tbody>
         </table>
+        <Link className="btn btn-danger mt-4" to="/employeeportal">
+          Go back to employee portal
+        </Link>
       </div>
     </div>
   );

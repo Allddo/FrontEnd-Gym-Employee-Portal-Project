@@ -25,9 +25,9 @@ export default function EmployeePortal() {
           </li>
           <li>
             <div>
-              <button className="dropdown-item" href="#">
+              <Link className="dropdown-item" to="/terminateemployment">
                 Terminate Employment
-              </button>
+              </Link>
             </div>
           </li>
           <li>
@@ -46,23 +46,28 @@ export default function EmployeePortal() {
             <div class="fw-bold">Organize Equipment</div>
             Only uptairs
           </div>
-          <span class="badge bg-danger rounded-pill">Priority Level</span>
+          <span class="badge bg-danger rounded-pill">+</span>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-start">
           <div class="ms-2 me-auto">
             <div class="fw-bold">Stock Fridges</div>
             Energy drinks only
           </div>
-          <span class="badge bg-warning rounded-pill">Priority Level</span>
+          <span class="badge bg-warning rounded-pill">+</span>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-start">
           <div class="ms-2 me-auto">
             <div class="fw-bold">Front Desk Duty</div>
             Remember to smile
           </div>
-          <span class="badge bg-success rounded-pill">Priority Level</span>
+          <span class="badge bg-success rounded-pill">+</span>
         </li>
       </ol>
+      <span class="badge bg-danger rounded-pill mt-4 me-4">High Priority</span>
+      <span class="badge bg-warning rounded-pill mt-4 me-4">
+        Medium Priority
+      </span>
+      <span class="badge bg-success rounded-pill mt-4 me-4">Low Priority</span>
     </div>
   );
 }

@@ -9,6 +9,7 @@ import ViewUser from "./users/ViewUser";
 import HomePage from "./pages/HomePage";
 import RegisterEmployee from "./pages/RegisterEmployee";
 import EmployeePortal from "./pages/EmployeePortal";
+import TerminateEmployment from "./pages/TerminateEmployment";
 
 function App() {
   return (
@@ -21,6 +22,11 @@ function App() {
           <Route exact path="/adduser" element={<AddUser />} />
           <Route exact path="/edituser/:id" element={<EditUser />} />
           <Route exact path="/viewuser/:id" element={<ViewUser />} />
+          <Route
+            exact
+            path="/terminateemployment"
+            element={<TerminateEmployment />}
+          />
           <Route exact path="/employeeportal" element={<EmployeePortal />} />
           <Route
             exact
